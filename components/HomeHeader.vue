@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header-left"> 
-      <span class="iconfont">&#xe624;</span>
+      <div class="iconfont back-icon">&#xe624;</div>
     </div>
     <div class="header-input">
       <span class="iconfont">&#xe632;</span>
@@ -9,7 +9,7 @@
     </div>
     <div class="header-right">
       城市
-      <span class="iconfont">&#xe64a;</span>
+      <span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
   </div>
 </template>
@@ -19,14 +19,18 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+@import '../assets/stylus/varibles.styl'
 .header
   display flex
   line-height 86px
-  background #00bcd4
+  background $bgColor
   color #fff
   .header-left
     width 64px
     float left
+    .back-icon
+      text-align center
+      font-size 30px
   .header-input
     margin-top 12px
     height 64px
@@ -42,5 +46,7 @@ export default {
     width 124px
     float right
     text-align center
+    .arrow-icon
+      font-size 12px
 </style>
 

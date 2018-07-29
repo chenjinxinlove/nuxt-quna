@@ -13,8 +13,14 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
   },
-  css: ['~assets/css/iconfont.css'],
-
+  css: ['~assets/css/reset.css','~assets/css/iconfont.css',
+    {
+	    src: 'swiper/dist/css/swiper.css'
+    }
+  ],
+  plugins: [
+    { src: '~plugins/swiper.js', ssr: false }
+  ],
   /*
   ** Customize the progress bar color
   */
