@@ -15,7 +15,7 @@
 </template>
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'Header'
 }
 </script>
 <style lang="stylus" scoped>
