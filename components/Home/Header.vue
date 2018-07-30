@@ -8,7 +8,7 @@
       输入城市/景点主题
     </div>
     <div class="header-right">
-      城市
+      <nuxt-link to="/city">城市</nuxt-link>
       <span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
   </div>
@@ -19,7 +19,7 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-@import '../assets/stylus/varibles.styl'
+@import '../../assets/stylus/varibles.styl'
 .header
   display flex
   line-height 86px
@@ -48,5 +48,7 @@ export default {
     text-align center
     .arrow-icon
       font-size 12px
+    a
+      color #fff
 </style>
 

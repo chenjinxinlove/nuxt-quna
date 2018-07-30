@@ -1,14 +1,15 @@
 <template>
   <div class="recommend">
-    <div class="title">周末去哪儿</div>
+    <div class="title">热销推荐</div>
     <ul>
       <li class="item">
         <div class="item-img-wrapper">
-          <img src="http://img1.qunarzz.com/sight/source/1505/53/02091f1ee43d0a.jpg_r_640x214_2e3256b1.jpg" alt="">
+          <img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_150x150_06cb3e52.jpg" alt="">
         </div>
         <div class="item-info">
           <p class="item-title">故宫</p>
           <p class="item-desc">故宫故宫故宫故宫</p>
+          <div class="item-buttom">查看详情</div>
         </div>
       </li>
       <li class="item">
@@ -18,6 +19,7 @@
         <div class="item-info">
           <p class="item-title">八达岭长城</p>
           <p class="item-desc">八达岭长城八达岭长城</p>
+          <div class="item-buttom">查看详情</div>
         </div>
       </li>
       <li class="item">
@@ -27,6 +29,7 @@
         <div class="item-info">
           <p class="item-title">颐和园</p>
           <p class="item-desc">颐和园颐和园颐和园</p>
+          <div class="item-buttom">查看详情</div>
         </div>
       </li>
     </ul>
@@ -34,40 +37,43 @@
 </template>
 <script>
 export default {
-  name: 'Weekend'
+  name: 'Recommend'
 }
 </script>
 <style lang="stylus" scoped>
-@import '../assets/stylus/varibles.styl'
+@import '../../assets/stylus/varibles.styl'
 .recommend
   .title
     line-height 80px
     background #eee
     text-indent 20px
-  .item-img-wrapper
+  .item
+    display flex
     overflow hidden
-    height 0
-    padding-bottom 33.9%
+    border-bottom 1px solide #ccc
     img
-      width 100%
-  .item-info
-    padding 10px
-    .item-title
-      line-height 54px
-      font-size 32px
-    .item-desc
-      line-height 32px
-      font-size 28px
-      color #ccc
-      overflow hidden
-      text-overflow ellipsis
-      white-space nowrap
-    .item-buttom
-      display inline-block
-      line-height 50px
-      background #ff9300
-      padding 0 20px
-      border-radius 3px
-      margin-top 20px
-      color #fff
+      width 170px
+      height 170px
+      padding 10px
+    .item-info
+      flex 4
+      padding 10px
+      .item-title
+        line-height 54px
+        font-size 32px
+      .item-desc
+        line-height 32px
+        font-size 28px
+        color #ccc
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+      .item-buttom
+        display inline-block
+        line-height 50px
+        background #ff9300
+        padding 0 20px
+        border-radius 3px
+        margin-top 20px
+        color #fff
 </style>
