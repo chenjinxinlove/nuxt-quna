@@ -19,7 +19,8 @@ module.exports = {
     }
   ],
   plugins: [
-    { src: '~plugins/swiper.js', ssr: false }
+    { src: '~plugins/swiper.js', ssr: false },
+    { src: '~plugins/better-scroll.js'}
   ],
   /*
   ** Customize the progress bar color
