@@ -26,7 +26,7 @@ export default {
       releases: [],
       isDev: isDev
     }
-    const res = await axios.get('http://d7.weather.com.cn/fishing/api/v1/tab?lon=116.40717&lat=39.9046')
+    // const res = await axios.get('http://d7.weather.com.cn/fishing/api/v1/tab?lon=116.40717&lat=39.9046')
     console.log(res)
     return data
   },

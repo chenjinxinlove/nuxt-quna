@@ -2,16 +2,18 @@
   <div class="recommend">
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item">
-        <div class="item-img-wrapper">
-          <img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_150x150_06cb3e52.jpg" alt="">
-        </div>
-        <div class="item-info">
-          <p class="item-title">故宫</p>
-          <p class="item-desc">故宫故宫故宫故宫</p>
-          <div class="item-buttom">查看详情</div>
-        </div>
-      </li>
+      <nuxt-link to="/detail">城市
+        <li class="item">
+          <div class="item-img-wrapper">
+            <img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_150x150_06cb3e52.jpg" alt="">
+          </div>
+          <div class="item-info">
+            <p class="item-title">故宫</p>
+            <p class="item-desc">故宫故宫故宫故宫</p>
+            <div class="item-buttom">查看详情</div>
+          </div>
+        </li>
+      </nuxt-link>
       <li class="item">
         <div class="item-img-wrapper">
           <img src="http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_150x150_2dec3e78.jpg" alt="">
